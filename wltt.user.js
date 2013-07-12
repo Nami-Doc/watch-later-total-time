@@ -1,3 +1,11 @@
+// ==UserScript==
+// @name Watch Later Total Time
+// @description UserScript for YouTube
+// @match https://www.youtube.com/feed/watch_later
+// @author Nami-D0C
+// @version 1
+// ==/UserScript==
+
 var totalTime = 0,
 	attr = 'data-context-item-time',
 	els = document.querySelectorAll('[' + attr + ']');
