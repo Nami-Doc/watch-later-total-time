@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Watch Later Total Time
-// @description UserScript for YouTu
+// @description UserScript for YouTube
 // @match https://www.youtube.com/feed/watch_later
 // @author Nami-D0C
 // @version 1
