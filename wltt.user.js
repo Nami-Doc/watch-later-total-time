@@ -38,4 +38,4 @@ function updateTime() {
 	span.innerHTML = ". Total time is " + hours + "h" + minutes
 		+ "m" + seconds + "s";
 }
-updateTime()
+updateTime();
