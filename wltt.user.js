@@ -24,9 +24,9 @@ document.getElementById('feed-item-remove-videos')
 function updateTime() {
 	var totalTime = 0,
 		attr = 'data-context-item-time',
-		els = document.querySelectorAll('[' + attr + ']');
+		els = document.querySelectorAll('span.video-time');
 	[].forEach.call(els, function (el) {
-		var val = el.getAttribute(attr).split(':');
+		var val = el.innerHTML.split(':');
 		totalTime += 60 * val[0];
 		totalTime += +val[1];
 	});
