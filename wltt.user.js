@@ -21,6 +21,8 @@ document.getElementById('feed-item-remove-videos')
 		setTimeout(updateTime, 1000);
 	});
 
+updateTime();
+
 function updateTime() {
 	var totalTime = 0,
 		attr = 'data-context-item-time',
@@ -35,7 +37,13 @@ function updateTime() {
 	var minutes = totalTime % 60;
 	totalTime = Math.floor(totalTime / 60)
 	var hours = totalTime % 60;
-	span.innerHTML = ". Total time is " + hours + "h" + minutes
-		+ "m" + seconds + "s";
+	span.innerHTML = ". Total time is " + pad(hours) + "h" + pad(minutes)
+		+ "m" + pad(seconds) + "s";
 }
-updateTime();
+
+function pad(n) {
+	if (n > 9)
+		return n;
+	else
+		return '0' + n;
+}
